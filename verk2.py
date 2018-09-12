@@ -68,4 +68,5 @@ def villa(error):
 def static_skrar(skra):
     return static_file(skra, root='myndir')
 
-run(host='localhost', port=8080, reloader=True, debug=True)
+#run(host='localhost', port=8080, reloader=True, debug=True)
+bottle.run(host='0.0.0.0', port=argv[1])
